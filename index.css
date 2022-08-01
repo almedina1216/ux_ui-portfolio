@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header-nav {
+    max-width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 100%;
+}
+
+#links {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 25%;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 1rem 1rem 0;
+}
+
+.nav-links > a {
+    text-decoration: none;
+    color:#0B2E75;
+}
+
+.nav-links > a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    max-width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#hero-image {
+    width: 98.9vw;
+}
+
+#hero-intro-container {
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    color: white;
+}
+
+#hero-intro-text {
+    margin-bottom: 8rem;
+}
+
+#hero-intro{
+    font-size: 3rem;
+}
+#hero-sentence {
+    font-size: 1rem; 
+}
+
+#btn-intro{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 6rem;
+
+}
+
+#btn-push {
+    text-indent: -9999em;
+}
+
+#btn-push:before {
+    content: "See My Work";
+    padding: 20px;
+    width: 70%;
+    height: 100%;
+    color: #FFF;
+    text-indent: 0;
+    background: #2a54aa;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0 #0B2E75;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: .2s ease-in-out;
+    font-size: 1.2rem;
+}
+
+#btn-push:hover:before {
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 #0B2E75;
+}
+
+#my-work-container {
+    background-color: plum;
+    height: 85%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;    
+}
+
+.sub-header{
+    font-size: 1.25rem;
+}
+.card-title{
+    font-size: 2.5rem;
+}
+
+.card-desc {
+    font-size: 1.25rem;
+    width: 85%;
+}
+
+.odd-work-card {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    padding: 6rem 5rem 4rem 7rem;
+    justify-content: space-evenly;
+}
+
+.left-odd-card {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 4rem 1rem 1rem; 
+    justify-content: space-evenly;
+}
+
+.right-odd-card {
+    flex: 1;
+}
+
+.even-work-card {
+    background-color: #E3F5FF;
+    display: flex;
+    flex-direction: row;
+    padding: 6rem 5rem 4rem 7rem;
+    justify-content: space-evenly;
+}
+
+.right-even-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 6rem; 
+    justify-content: space-evenly;
+}
+
+.left-even-card {
+    flex: 1;
+}
+
+.btn-card-odd {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.btn-push-project-odd {
+    text-indent: -9999em;
+}
+
+.btn-push-project-odd:before {
+    content: "View Project";
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    color: #FFF;
+    text-indent: 0;
+    background: #2a54aa;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0 #0B2E75;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: .2s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.btn-push-project-odd:hover:before {
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 #0B2E75;
+}
+
+.btn-card-even{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.btn-push-project-even {
+    text-indent: -9999em;
+}
+
+.btn-push-project-even:before {
+    content: "View Project";
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    color: #FFF;
+    text-indent: 0;
+    background: #2a54aa;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0 #0B2E75;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: .2s ease-in-out;
+    font-size: .9rem;
+}
+
+.btn-push-project-even:hover:before {
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 0 #0B2E75;
+}
+
+footer {
+    max-width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#links-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 35%;
+}
+
+.bold-links{
+    font-weight: bold;
+}
+
+#footer-year{
+    width: 35%;
+    text-align: center;
+}
