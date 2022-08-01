@@ -96,7 +96,7 @@ body {
     top: 5px;
     left: 5px;
     transition: .2s ease-in-out;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 #btn-push:hover:before {
@@ -228,7 +228,7 @@ body {
     top: 5px;
     right: 5px;
     transition: .2s ease-in-out;
-    font-size: .93rem;
+    font-size: .91rem;
 }
 
 .btn-push-project-even:hover:before {
