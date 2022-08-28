@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>UX_UI_HW_18</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" class="logo">
+        <nav>
+            <ul id = "menuList">
+            <li><a href="">Home</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Resume</a></li>
+            </ul> 
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    <main>
+        <div id="hero">
+            <div id="hero-image">
+                <img id="mountain-image" src="\images\Mask group.png" alt="mountain view">
+            </div>
+            <div id="aboutMe">
+                <h1>About Me:</h1>
+                <p> Hi! My name is Adriana and I live in the beautiful state of Colorado. Working in education I have learned to observe students relationships with the world around them. I use art, design, and technology to create engaging learning experiences for my students.  User experience has always been a part of my teaching philosophy. I am excited to focus on user experience to create innovative learning technology for our youngest learners. </p>
+            </div>
+        </div>
+
+        <section id=" MyUX-Skills">
+            <div id="section-title">
+                <h1 id="mySkills"> My UX Skills</h1>
+            </div>
+            <div id="container-skills"> 
+                <div id="section-header"></div>
+
+                <div id="flex-container">
+                    <div class="skill-card"> 
+                        <div class="card-items">
+                            <div class="heading">
+                                <h3> User Research</h3>
+                            </div>
+                            <p class="cardText"> I thrive in finding solutions to problems through user interviews and insights. 
+                            </p>
+                            <img src="../images/research.png">
+                        </div>
+                    </div>
+
+                    <div class="skill-card"> 
+                        <div class="card-items">
+                            <div class="heading">
+                                <h3> User Interface Design</h3>
+                            </div>
+                            <p class="cardText"> Understanding what the user needs is the first thing I think about when creating a user interface. </p>
+                            <img src="../images/design.png">
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="card-items">
+                            <div class="heading">
+                                <h3> Web Development</h3>
+                            </div>
+                            <p class="cardText"> Experienced in bringing my designs to life using HTML,CSS, JavaScript, and Bootstrap. </p>
+                            <img src="../images/dev.png">
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+                
+        <footer>           
+            <ul id="links-footer">
+                <li class="nav-links bold-links"><a href="#my-work-container">Work</a></li>
+                <li class="nav-links bold-links"><a href="#hero-intro-container">About</a></li>
+                <li class="nav-links bold-links"><a href="https://www.w3schools.com">Contact</a></li> 
+            </ul>
+            <div id="footer-year">2022</div>  
+        </footer>
+    </main>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+        if(menuList.style.maxHeight == "0px")
+            {
+            menuList.style.maxHeight = "140px";
+            }
+        else
+            {
+            menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>

@@ -1,0 +1,243 @@
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+}
+#hero{
+    width: 100vw;
+    background-color: #b5e0f8;
+    overflow: hidden;
+}
+/********** Nav Bar Config **********/
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header-nav {
+    max-width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ff5ea2
+}
+
+#links {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 25%;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 1rem 1rem 0;
+}
+
+.nav-links > a {
+    text-decoration: none;
+    color:#0B2E75;
+}
+
+.nav-links > a:hover {
+    text-decoration: underline;
+}
+/********Hero*******/
+#hero {
+    background-color: #b5e0f8;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-areas:
+    'hero-image aboutMe';
+    justify-content: center;
+    position: relative;
+    width: 98.8vw;
+    justify-content: space-between;
+    margin: auto;  
+    gap: 4rem;
+    padding: 50px;
+}
+h1{
+    font-size: 3.17em;
+}
+p{
+    font-size: 1.333em;
+}
+h3{
+    font-size: 1.777em;
+}
+
+#aboutMe {
+    grid-area: aboutMe;
+    width: 40vw;
+    left: 5%;
+    height: auto;
+}
+
+#mountain-image {
+    width: 50vw;
+    height: auto;
+}
+/*******Skills*******/
+.skill-item {
+    padding: 10px;
+    margin: 20px;
+    margin-top: 10px;
+}
+#section-header{
+    font-display:flex ;
+}
+
+#container-skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-items{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex-container {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-card{
+    height: 500px;
+    width: 350;
+    margin: 20px;
+    align-items: center;
+    background-color: #d9d9d9; 
+}
+
+
+/*********footer********/
+footer {
+    max-width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#links-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 35%;
+}
+.bold-links{
+    font-weight: bold;
+}
+
+#footer-year{
+    width: 35%;
+    text-align: center;
+}
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        width: 40%;
+        background: linear-gradient(#b5e0f8, #30b2f9);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    #hero {
+        align-items: center;
+        grid-template-areas:
+        'hero-image'
+        'aboutMe';
+    }
+    #hero-image { 
+        width: 100vw;
+        min-height: fit-content;
+    }
+    #aboutMe {
+        width: 100vw;
+        height: auto;}
+
+    #flex-container {
+    flex-direction: column;
+    } 
+}
+
+
+#navbar{
+    grid-area:header;
+}
+
+#MyUX-Skills{
+    grid-area:content;
+}
+.footer{
+    grid-area: footer;
+}
+}
