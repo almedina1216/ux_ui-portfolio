@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Adriana's Portfolio Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Resume</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <main>
+            <section id="hero">
+                <div class="hero-card">
+                    <img id="hero-image" src="./images/herodesktop.png" alt="girl on a mountain">
+                    <div id="hero-intro-container">
+                        <div id="hero-intro-text">
+                            <h1 id="hero-intro">Hi! I'm Adriana.</h1>
+                            <p id="hero-sentence">I enjoy solving problems through design.</p>
+                        </div>
+                        <div id="btn-intro">
+                            <button id="btn-push" href="#none" aria-label="See My Work"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="my-work-container">
+                <div class="odd-work-card">
+                    <div class="left-odd-card">
+                        <h2 class="sub-header">Nonprofit</h2>
+                        <h1 class="card-title">Friendship Circle of Colorado</h1>
+                        <p class="card-desc">Redesign Friendship Circle of Colorado site for desktop and mobile to
+                            foster growth and enagement amongst target users.</p>
+                            <div id="btn-intro">
+                                <button id="btn-push-project" href="#none" aria-label="View Project"></button>
+                            </div>
+                    </div>
+                    <div class="right-odd-card">
+                        <img id="FCOCmockup" src="./images/friendshipcirclehomepg.png" alt="">
+                    </div>
+                </div>
+
+                <div class="even-work-card">
+                    <div class="left-even-card">
+                        <img id="DOE" src="images/DOEhomepagemockup.png" alt="">
+                    </div>
+                    <div class="right-even-card">
+                        <h2 class="sub-header">Nonprofit</h2>
+                        <h1 class="card-title">Friendship Circle of Colorado</h1>
+                        <p class="card-desc">Redesign Friendship Circle of Colorado site for desktop and mobile to
+                            foster growth and enagement amongst target users.</p>
+                            <div id="btn-intro">
+                                <button id="btn-push-project" href="#none" aria-label="View Project"></button>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="odd-work-card">
+                    <div class="left-odd-card">
+                        <h2 class="sub-header">Environmental</h2>
+                        <h1 class="card-title">Evergreen</h1>
+                        <p class="card-desc">Create a mobile app that helps users track their positive impact on the
+                            environment.</p>
+                            <div id="btn-intro">
+                                <button id="btn-push-project" href="#none" aria-label="View Project"></button>
+                            </div>
+                    </div>
+                    <div class="right-odd-card">
+                        <img id="EverGreenmockup" src="./images/evergreenhomepage.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul id="links-footer">
+                <li class="nav-links bold-links"><a href="#my-work-container">Work</a></li>
+                <li class="nav-links bold-links"><a href="https://www.w3schools.com">About</a></li>
+                <li class="nav-links bold-links"><a href="https://www.w3schools.com">Contact</a></li>
+            </ul>
+            <div id="footer-year">2022</div>
+        </footer>
+    </div>
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "140px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
